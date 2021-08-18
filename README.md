@@ -23,7 +23,8 @@ Additional information about the model is found in `Train UNET.ipynb`.
 
 ### Web
 
-Coming soon! 
+Nuclei Finder is deployed with Heroku at
+[https://nuclei-finder.herokuapp.com/](https://nuclei-finder.herokuapp.com/)
 
 ### Local
 
