@@ -60,7 +60,8 @@ class App:
         modalities.
 
         Made by [Scott Trinkle](https://www.scotttrinkle.com). Code and
-        information on the training process is available [on Github]().  '''
+        information on the training process is available [on
+        Github](https://github.com/scott-trinkle/nuclei-finder).  '''
 
         instruct_text='''
         ## Load local images
