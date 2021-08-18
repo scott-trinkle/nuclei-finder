@@ -54,8 +54,8 @@ class App:
 
         Nuclei Finder is an app for automatic nucleus segmentation in optical
         cell imaging. It was build using a UNET deep learning architecture
-        trained from scratch on the [Data Science Bowl
-        2018](https://www.kaggle.com/c/data-science-bowl-2018/overview) dataset,
+        trained from scratch on the [2018 Data Science
+        Bowl](https://www.kaggle.com/c/data-science-bowl-2018/overview) dataset,
         which includes a diverse set of cell types, magnifications, and imaging
         modalities.
 
