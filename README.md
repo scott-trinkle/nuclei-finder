@@ -17,6 +17,8 @@ includes a diverse set of cell types, magnifications, and imaging modalities.
 - [UNET](https://en.wikipedia.org/wiki/U-Net) architecture
 - Used early stopping based on validation loss
 
+Additional information about the model is found in `Train UNET.ipynb`.
+
 ## Installation
 
 ### Web
