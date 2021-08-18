@@ -53,7 +53,7 @@ class App:
         # Nuclei Finder
 
         Nuclei Finder is an app for automatic nucleus segmentation in optical
-        cell imaging. It was build using a UNET deep learning architecture
+        cell imaging. It was built using a UNET deep learning architecture
         trained from scratch on the [2018 Data Science
         Bowl](https://www.kaggle.com/c/data-science-bowl-2018/overview) dataset,
         which includes a diverse set of cell types, magnifications, and imaging
@@ -136,7 +136,7 @@ class App:
 
     def save_predictions(self):
 
-        with ZipFile('results.zip', 'w') as z:
+        with ZipFile(self.filename, 'w') as z:
             for pred, fn in zip(self.predictions, self.titles):
                 mask = pred.astype(np.uint8)
                 ID, ext = fn.split('.')
@@ -145,7 +145,7 @@ class App:
                 plt.imsave(buf, mask, format=ext, cmap='gray')
                 z.writestr(outfn, buf.getvalue())
 
-        with open('results.zip', 'rb') as f:
+        with open(self.filename, 'rb') as f:
             bytes = f.read()
             b64 = base64.b64encode(bytes).decode()
             href = f"<a href=\"data:file/zip;base64,{b64}\" download={self.filename}>Click to download {self.filename}</a>"
