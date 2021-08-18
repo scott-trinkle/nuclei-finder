@@ -46,5 +46,6 @@ conda activate nuclei
 Run app with Streamlit:
 
 ```
+cd nuclei-finder
 streamlit run app.py
 ```
