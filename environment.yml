@@ -3,10 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - matplotlib=3.4.3=py37hf985489_0
-  - numpy=1.21.2=py37haefe36b_0
-  - scikit-image=0.18.2=py37hb23ed4d_0
-  - scikit-learn=0.24.2=py37h572704e_1
-  - scipy=1.7.1=py37h4e3cf02_0
-  - tensorflow=2.4.1=py37hf985489_0
-  - streamlit=0.86.0=pyhd8ed1ab_0  
+  - matplotlib=3.4.3
+  - numpy=1.21.2
+  - scikit-image=0.18.2
+  - scikit-learn=0.24.2
+  - scipy=1.7.1
+  - tensorflow=2.4.1
+  - streamlit=0.86.0
