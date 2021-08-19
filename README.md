@@ -1,9 +1,9 @@
+[![Streamlit
+App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/scott-trinkle/nuclei-finder/main/app.py)
+
 # Nuclei Finder
 
 ![](sample_imgs/demo.png)
-
-[![Streamlit
-App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/scott-trinkle/nuclei-finder/main/app.py)
 
 Nuclei Finder is a [Streamlit](https://streamlit.io) app for automatic nucleus
 segmentation in optical cell imaging. It was built using a UNET deep learning
