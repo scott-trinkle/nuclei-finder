@@ -1,15 +1,13 @@
 import tensorflow as tf
 
 import numpy as np
-from skimage.io import imread
 from skimage.color import gray2rgb
 from model import get_model
 from scipy.ndimage import binary_fill_holes
-import matplotlib.pyplot as plt
 
 
 def img_to_tiles(img, tgt_shape):
-    '''Takes an RGB or RGBA ndarray image (img) and returns a list of 
+    '''Takes an RGB or RGBA ndarray image (img) and returns a list of
     overlappingtiles of shape=tgt_shape'''
     tgt_h, tgt_w, tgt_ch = tgt_shape
     img_h, img_w = img.shape[:2]

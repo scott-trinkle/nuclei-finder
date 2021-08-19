@@ -1,11 +1,7 @@
-import numpy as np
-
 import tensorflow as tf
-from tensorflow.keras.models import Model, load_model
+from tensorflow.keras.models import Model
 from tensorflow.keras.layers import (
     Input, Dropout, Lambda, Conv2D, Conv2DTranspose, MaxPooling2D, concatenate)
-from tensorflow.keras.callbacks import (
-    EarlyStopping, ModelCheckpoint, LearningRateScheduler)
 
 
 def conv_block(x, num_filters, do=0.1, activation='elu'):
@@ -18,7 +14,8 @@ def conv_block(x, num_filters, do=0.1, activation='elu'):
 
 
 def build_model(input_size=(128, 128, 3), num_filters=None, dropouts=None):
-    # Inspired by https://idiotdeveloper.com/polyp-segmentation-using-unet-in-tensorflow-2/
+    # Inspired by:
+    # https://idiotdeveloper.com/polyp-segmentation-using-unet-in-tensorflow-2/
     if num_filters is None:
         num_filters = [16, 32, 64, 128, 256]
     if dropouts is None:
