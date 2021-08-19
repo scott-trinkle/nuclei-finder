@@ -67,18 +67,6 @@ def tiles_to_img(tiles, img_shape):
     return img
 
 
-model = get_model()
-
-
-def load_imgs(IDs):
-    imgs = []
-    for ID in IDs:
-        fn = f'data/stage2_test_final/{ID}/images/{ID}.png'
-        img = imread(fn)
-        imgs.append(img)
-    return imgs
-
-
 def predict(imgs, IDs=None):
     '''Expects a list of images
     '''
@@ -99,6 +87,7 @@ def predict(imgs, IDs=None):
     ID_tile_array = np.array(ID_tile_list)  # to array
 
     # Predict nuclei masks
+    model = get_model()
     X = tf.convert_to_tensor(np.array(img_tile_list))
     preds = model.predict(X)
     preds_bin = (preds > 0.5).astype(np.uint8)
@@ -123,20 +112,3 @@ def predict(imgs, IDs=None):
         preds_list.append(pred_img_filled)
 
     return preds_list
-
-
-# ID1 = 'fd959b91f1fd8971f6e0cfc0848e80e302ca748bb26daf1aa5c70d5e07b416c6'
-# ID2 = 'fd11b29f504e0abe7fe5684f69aa9cdc8a4c20458c603d685faabecdc8b46f98'
-# ID3 = 'dec2275fe4e68df20adea24e334a12eed0ae13eb84a93ba686d452501e42ee76'
-
-# IDs_list = [ID1, ID2, ID3]
-# imgs_list = load_imgs(IDs_list)
-# preds_list = predict(imgs_list)
-
-# N = len(preds_list)
-# fig, ax = plt.subplots(N, 2)
-# for i in range(N):
-#     ax[i, 0].imshow(imgs_list[i])
-#     ax[i, 1].imshow(preds_list[i])
-# fig.tight_layout()
-# plt.show()
