@@ -2,6 +2,9 @@
 
 ![](sample_imgs/demo.png)
 
+[![Streamlit
+App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/scott-trinkle/nuclei-finder/main/app.py)
+
 Nuclei Finder is a [Streamlit](https://streamlit.io) app for automatic nucleus
 segmentation in optical cell imaging. It was built using a UNET deep learning
 architecture trained from scratch on the [2018 Data Science
@@ -23,8 +26,8 @@ Additional information about the model is found in `Train UNET.ipynb`.
 
 ### Web
 
-Nuclei Finder is deployed with Heroku at
-[https://nuclei-finder.herokuapp.com/](https://nuclei-finder.herokuapp.com/)
+Nuclei Finder is deployed with Streamlit at
+[https://share.streamlit.io/scott-trinkle/nuclei-finder/main/app.py](https://share.streamlit.io/scott-trinkle/nuclei-finder/main/app.py)
 
 ### Local
 
