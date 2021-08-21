@@ -23,6 +23,12 @@ includes a diverse set of cell types, magnifications, and imaging modalities.
 
 Additional information about the model is found in `Train UNET.ipynb`.
 
+## Planned future updates:
+- I am currently working on retraining the model using ResNet101 trained on the ImageNet dataset as the encoder in the UNET architecture
+- Experiment with a [Mask R-CNN](https://arxiv.org/abs/1703.06870) architecture
+- Expand training with [additional datasets](https://www.nature.com/articles/s41597-020-00608-w)
+- Implement additional post-processing steps
+
 ## Installation
 
 ### Web
