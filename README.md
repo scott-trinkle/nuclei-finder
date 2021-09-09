@@ -42,6 +42,7 @@ Clone the repository:
 
 ```
 git clone https://github.com/scott-trinkle/nuclei-finder
+cd nuclei-finder
 ```
 
 Install dependencies (preferably within a virtual environment)
@@ -53,6 +54,5 @@ pip install -r requirements.txt
 Run app with Streamlit:
 
 ```
-cd nuclei-finder
 streamlit run app.py
 ```
